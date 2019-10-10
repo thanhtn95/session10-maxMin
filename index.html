@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    for(let i = 0 ; i <20;i++){
+        arr.push(Math.floor(Math.random()*101));
+    }
+    console.log(arr);
+
+    function maxMin(arr) {
+        let max = arr[0];
+        let min = arr[0];
+        for(let i= 1; i<arr.length;i++){
+            if(max<arr[i]){
+                max = arr[i];
+            }
+            if(min>arr[i]){
+                min = arr[i];
+            }
+        }
+        console.log('Max = '+max);
+        console.log('Min = '+min);
+    }
+
+    maxMin(arr);
+</script>
+</body>
+</html>
